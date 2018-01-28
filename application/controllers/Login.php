@@ -5,6 +5,7 @@ class Login extends CI_Controller{
 	function __construct(){
 		parent::__construct();		
 		$this->load->model('m_login');
+		$this->load->model('m_data');
 
 	}
 
@@ -36,7 +37,8 @@ class Login extends CI_Controller{
 		}
 	}
 	function table(){
-		$this->load->view('tables');
+		$data['user'] = $this->m_data->tampil_data()->result();
+		$this->load->view('tables',$data);
 	}
 
 	function logout(){

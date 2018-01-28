@@ -78,7 +78,7 @@
 					</div>
 					<div class="row form-group">
 						<div class="col-md-12">
-							<a href="index.html" class="btn btn-primary btn-block">Main Page</a>
+							<a href="<?= base_url() ?>" class="btn btn-primary btn-block">Main Page</a>
 						</div>
 					</div>
 				</form>	
