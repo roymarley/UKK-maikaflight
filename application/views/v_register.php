@@ -50,40 +50,42 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 <![endif]-->
-
 </head>
 <body>
 	<div class="container">
 		<div class="tab-content">
 			<div class="tab-content-inner active" data-content="signup">
-				<h3>Login to Traveler</h3>
-				<form action="<?= base_url('login/aksi_login'); ?>" method="post">
+				<h3>Register to Traveler</h3>
+				<form action="<?= base_url('crud/tambah_aksi'); ?>" method="post">
 					<div class="row form-group">
 						<div class="col-md-12">
-							<label for="fullname">Username</label>
+							<label for="id">Id</label>
+							<input type="text" name="id" class="form-control">
+						</div>
+						<div class="col-md-12">
+							<label for="username">username</label>
 							<input type="text" name="username" class="form-control">
 						</div>
-					</div>
-					<div class="row form-group">
 						<div class="col-md-12">
-							<label for="fullname">Username</label>
+							<label for="password">password</label>
 							<input type="password" name="password" class="form-control">
 						</div>
-					</div>
-
-					<div class="row form-group">
 						<div class="col-md-12">
-							<input type="submit" class="btn btn-primary btn-block" value="Login">
+							<label for="nama_lengkap">nama lengkap</label>
+							<input type="text" name="nama_lengkap" class="form-control">
 						</div>
-					</div>
-					<div class="row form-group">
 						<div class="col-md-12">
-							<a href="<?= base_url(); ?>" class="btn btn-primary btn-block">Main Page</a>
+							<label for="level">level</label>
+							<input type="text" name="level" class="form-control">
 						</div>
-					</div>
-					<div class="row form-group">
 						<div class="col-md-12">
-							<a href="<?= base_url('crud/tambah'); ?>" class="btn btn-primary btn-block">Register</a>
+							<label for="foto">foto</label>
+							<input type="text" name="foto" class="form-control">
+						</div>
+						<div class="row form-group">
+							<div class="col-md-12">
+								<input type="submit" class="btn btn-primary btn-block" value="Login">
+							</div>
 						</div>
 					</div>
 				</form>	

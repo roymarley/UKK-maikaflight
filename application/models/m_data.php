@@ -23,11 +23,6 @@ class M_data extends CI_Model{
 		return $this->db->get('user')->row();
 	}
 
-	// function update_data($where,$data,$table){
-	// 	$this->db->where($where);
-	// 	$this->db->update($table,$data);
-	// }	
-
 	function update($id){
 		$id = $this->input->post('id');
 		$username = $this->input->post('username');

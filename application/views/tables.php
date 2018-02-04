@@ -60,10 +60,10 @@
 
   <div id="sidebar"> <a href="#" class="visible-phone"><i class="icon icon-th"></i>Tables</a>
     <ul>
-      <li><a href="index.html"><i class="icon icon-home"></i> <span>Dashboard</span></a> </li>
+      <li><a href="<?= base_url() ?>admin"><i class="icon icon-home"></i> <span>Dashboard</span></a> </li>
       <li><a href="charts.html"><i class="icon icon-signal"></i> <span>Charts &amp; graphs</span></a> </li>
       <li><a href="widgets.html"><i class="icon icon-inbox"></i> <span>Widgets</span></a> </li>
-      <li class="active"><a href="tables.html"><i class="icon icon-th"></i> <span>Tables</span></a></li>
+      <li class="active"><a href="<?= base_url() ?>login/table"><i class="icon icon-th"></i> <span>Tables</span></a></li>
       <li><a href="grid.html"><i class="icon icon-fullscreen"></i> <span>Full width</span></a></li>
       <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>Forms</span> <span class="label label-important">3</span></a>
         <ul>
@@ -145,6 +145,7 @@
                     <td><?php echo $u->level ?></td>
                     <td><?php echo $u->foto ?></td>
                     <td><u><a href="<?php echo base_url('crud/edit/'.$u->id); ?>">edit</a></u></td>
+                    <td><u><a href="<?php echo base_url('crud/hapus/'.$u->id); ?>">hapus</a></u></td>
                   </tr>
                   <?php } ?>
                 </tbody>
@@ -160,13 +161,13 @@
     <div id="footer" class="span12"> 2013 &copy; Matrix Admin. Brought to you by <a href="http://themedesigner.in">Themedesigner.in</a> </div>
   </div>
   <!--end-Footer-part-->
-  <script src="js/jquery.min.js"></script> 
-  <script src="js/jquery.ui.custom.js"></script> 
-  <script src="js/bootstrap.min.js"></script> 
-  <script src="js/jquery.uniform.js"></script> 
-  <script src="js/select2.min.js"></script> 
-  <script src="js/jquery.dataTables.min.js"></script> 
-  <script src="js/matrix.js"></script> 
-  <script src="js/matrix.tables.js"></script>
+  <script src="<?= base_url() ?>assets/js/jquery.min.js"></script> 
+  <script src="<?= base_url() ?>assets/js/jquery.ui.custom.js"></script> 
+  <script src="<?= base_url() ?>assets/js/bootstrap.min.js"></script> 
+  <script src="<?= base_url() ?>assets/js/jquery.uniform.js"></script> 
+  <script src="<?= base_url() ?>assets/js/select2.min.js"></script> 
+  <script src="<?= base_url() ?>assets/js/jquery.dataTables.min.js"></script> 
+  <script src="<?= base_url() ?>assets/js/matrix.js"></script> 
+  <script src="<?= base_url() ?>assets/js/matrix.tables.js"></script>
 </body>
 </html>

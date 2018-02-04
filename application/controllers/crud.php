@@ -16,8 +16,27 @@ class Crud extends CI_Controller{
 	}
 
 	function tambah(){
-		$data['user'] = $this->m_data->tampil_data()->result();
-		$this->load->view('v_edit',$data);
+		$this->load->view('v_register');
+	}
+
+	function tambah_aksi(){
+		$id = $this->input->post('id');
+		$username = $this->input->post('username');
+		$password = $this->input->post('password');
+		$nama_lengkap = $this->input->post('nama_lengkap');
+		$level = $this->input->post('level');
+		$foto = $this->input->post('foto');
+
+		$data = array(
+			'id' => $id,
+			'username' => $username,
+			'password' => $password,
+			'nama_lengkap' => $nama_lengkap,
+			'level' => $level,
+			'foto' => $foto
+		);
+		$this->m_data->input_data($data,'user');
+		redirect('login');
 	}
 
 	function update(){

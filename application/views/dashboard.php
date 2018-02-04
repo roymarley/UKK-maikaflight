@@ -59,7 +59,7 @@
 <!--sidebar-menu-->
 <div id="sidebar"><a href="#" class="visible-phone"><i class="icon icon-home"></i> Dashboard</a>
   <ul>
-    <li class="active"><a href="index.html"><i class="icon icon-home"></i> <span>Dashboard</span></a> </li>
+    <li class="active"><a href="<?= base_url() ?>admin"><i class="icon icon-home"></i> <span>Dashboard</span></a> </li>
     <li> <a href="charts.html"><i class="icon icon-signal"></i> <span>Charts &amp; graphs</span></a> </li>
     <li> <a href="widgets.html"><i class="icon icon-inbox"></i> <span>Widgets</span></a> </li>
     <li><a href="<?= base_url() ?>login/table"><i class="icon icon-th"></i> <span>Tables</span></a></li>
@@ -123,7 +123,7 @@
         <li class="bg_lb"> <a href="index.html"> <i class="icon-dashboard"></i> <span class="label label-important">20</span> My Dashboard </a> </li>
         <li class="bg_lg span3"> <a href="charts.html"> <i class="icon-signal"></i> Charts</a> </li>
         <li class="bg_ly"> <a href="widgets.html"> <i class="icon-inbox"></i><span class="label label-success">101</span> Widgets </a> </li>
-        <li class="bg_lo"> <a href="tables.html"> <i class="icon-th"></i> Tables</a> </li>
+        <li class="bg_lo"> <a href="<?= base_url() ?>login/table"> <i class="icon-th"></i> Tables</a> </li>
         <li class="bg_ls"> <a href="grid.html"> <i class="icon-fullscreen"></i> Full width</a> </li>
         <li class="bg_lo span3"> <a href="form-common.html"> <i class="icon-th-list"></i> Forms</a> </li>
         <li class="bg_ls"> <a href="buttons.html"> <i class="icon-tint"></i> Buttons</a> </li>
@@ -415,27 +415,27 @@
 
 <!--end-Footer-part-->
 
-<script src="js/excanvas.min.js"></script> 
-<script src="js/jquery.min.js"></script> 
-<script src="js/jquery.ui.custom.js"></script> 
-<script src="js/bootstrap.min.js"></script> 
-<script src="js/jquery.flot.min.js"></script> 
-<script src="js/jquery.flot.resize.min.js"></script> 
-<script src="js/jquery.peity.min.js"></script> 
-<script src="js/fullcalendar.min.js"></script> 
-<script src="js/matrix.js"></script> 
-<script src="js/matrix.dashboard.js"></script> 
-<script src="js/jquery.gritter.min.js"></script> 
-<script src="js/matrix.interface.js"></script> 
-<script src="js/matrix.chat.js"></script> 
-<script src="js/jquery.validate.js"></script> 
-<script src="js/matrix.form_validation.js"></script> 
-<script src="js/jquery.wizard.js"></script> 
-<script src="js/jquery.uniform.js"></script> 
-<script src="js/select2.min.js"></script> 
-<script src="js/matrix.popover.js"></script> 
-<script src="js/jquery.dataTables.min.js"></script> 
-<script src="js/matrix.tables.js"></script> 
+<script src="<?= base_url() ?>assets/js/excanvas.min.js"></script> 
+<script src="<?= base_url() ?>assets/js/jquery.min.js"></script> 
+<script src="<?= base_url() ?>assets/js/jquery.ui.custom.js"></script> 
+<script src="<?= base_url() ?>assets/js/bootstrap.min.js"></script> 
+<script src="<?= base_url() ?>assets/js/jquery.flot.min.js"></script> 
+<script src="<?= base_url() ?>assets/js/jquery.flot.resize.min.js"></script> 
+<script src="<?= base_url() ?>assets/js/jquery.peity.min.js"></script> 
+<script src="<?= base_url() ?>assets/js/fullcalendar.min.js"></script> 
+<script src="<?= base_url() ?>assets/js/matrix.js"></script> 
+<script src="<?= base_url() ?>assets/js/matrix.dashboard.js"></script> 
+<script src="<?= base_url() ?>assets/js/jquery.gritter.min.js"></script> 
+<script src="<?= base_url() ?>assets/js/matrix.interface.js"></script> 
+<script src="<?= base_url() ?>assets/js/matrix.chat.js"></script> 
+<script src="<?= base_url() ?>assets/js/jquery.validate.js"></script> 
+<script src="<?= base_url() ?>assets/js/matrix.form_validation.js"></script> 
+<script src="<?= base_url() ?>assets/js/jquery.wizard.js"></script> 
+<script src="<?= base_url() ?>assets/js/jquery.uniform.js"></script> 
+<script src="<?= base_url() ?>assets/js/select2.min.js"></script> 
+<script src="<?= base_url() ?>assets/js/matrix.popover.js"></script> 
+<script src="<?= base_url() ?>assets/js/jquery.dataTables.min.js"></script> 
+<script src="<?= base_url() ?>assets/js/matrix.tables.js"></script> 
 
 <script type="text/javascript">
   // This function is called from the pop-up menus to transfer to
